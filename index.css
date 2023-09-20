@@ -19,8 +19,12 @@ html {
 }
 
 body {
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
+  background: var(--Charcoal-Grey);
   font-family: "Roboto", sans-serif;
   color: var(--Dark-Slate-Grey);
 }
@@ -33,6 +37,10 @@ h2 {
 h1,
 h2 {
   font-size: 4rem;
+}
+
+h2 {
+  margin: 4rem 0 2.4rem;
 }
 
 p {
@@ -53,6 +61,7 @@ p {
 /* Card */
 .card {
   border: 0;
+  background-color: var(--White);
   border-radius: 36px;
 }
 
@@ -142,4 +151,39 @@ input::placeholder {
 .input-invalid {
   border-color: var(--Tomato);
   color: var(--Tomato);
+}
+
+/* Modal */
+.modal {
+  padding: 5rem 6rem 6.4rem;
+  max-width: 50rem;
+}
+
+.modal p {
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 471px) {
+  body {
+    padding: 0 2.2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .modal {
+    width: 100%;
+    border-radius: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .modal-content {
+    align-self: center;
+  }
+
+  .btn {
+    align-self: flex-end;
+  }
 }
