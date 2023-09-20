@@ -79,3 +79,67 @@ p {
     font-size: 1.8rem;
   }
 }
+
+/* btn */
+.btn {
+  background: var(--Dark-Slate-Grey);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--White);
+  font-size: 1.6rem;
+  padding: 1.8rem 0;
+  font-family: inherit;
+  font-weight: 700;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--Tomato);
+  /* background-color: rgb(255, 218, 218); */
+  box-shadow: 0 4px 40px rgba(241, 78, 78, 1);
+}
+
+/* Input */
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label-container p {
+  color: var(--Tomato);
+  margin-bottom: 0;
+}
+
+.email-label,
+.text-warning {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.text-warning {
+  display: none;
+}
+
+input {
+  width: 100%;
+  padding: 1.5rem 0;
+  text-indent: 2.2rem;
+  font-size: 1.6rem;
+  color: var(--Dark-Slate-Grey);
+  border-radius: 8px;
+  outline: 0;
+  border: 0.5px solid var(--Grey);
+  margin: 1rem 0 2.4rem;
+}
+
+input::placeholder {
+  font-size: 1.6rem;
+}
+
+.input-invalid {
+  border-color: var(--Tomato);
+  color: var(--Tomato);
+}
