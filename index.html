@@ -18,6 +18,76 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="grid grid-1x2 card card-sign_up" id="sign_up">
+      <picture class="img-container">
+        <source
+          media="(max-width:889px)"
+          srcset="images/illustration-sign-up-mobile.svg"
+        />
+        <source
+          media="(min-width:890px)"
+          srcset="images/illustration-sign-up-desktop.svg"
+        />
+        <img
+          class="card__img"
+          src="images/illustration-sign-up-mobile.svg"
+          alt=""
+        />
+      </picture>
+      <div class="card__body">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="list">
+          <li class="item">Product discovery and building what matters</li>
+          <li class="item">Measuring to ensure updates are a success</li>
+          <li class="item">And much more!</li>
+        </ul>
+        <form id="form">
+          <div class="label-container">
+            <label for="email" class="email-label">Email address</label>
+            <p class="text-warning">Valid email required</p>
+          </div>
+          <input type="email" id="email" placeholder="ash@loremcompany.com" />
+          <button type="submit" class="btn">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-display">
+      <div class="card modal">
+        <div class="modal-content">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+          >
+            <defs>
+              <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#FF6A3A" />
+                <stop offset="100%" stop-color="#FF527B" />
+              </linearGradient>
+            </defs>
+            <g fill="none">
+              <circle cx="32" cy="32" r="32" fill="url(#a)" />
+              <path
+                stroke="#FFF"
+                stroke-width="4"
+                d="m18.286 34.686 8.334 7.98 19.094-18.285"
+              />
+            </g>
+          </svg>
+          <h2>Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to ash@loremcompany.com. Please
+            open it and click the button inside to confirm your subscription.
+          </p>
+        </div>
+        <button class="btn" id="btn-modal">Dismiss message</button>
+      </div>
+    </div>
+
     <script src="App.js"></script>
   </body>
 </html>
